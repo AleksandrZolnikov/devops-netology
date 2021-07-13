@@ -64,3 +64,19 @@ RUN service jenkins start
 ENTRYPOINT /etc/init.d/jenkins start && /bin/bash
 EXPOSE 8080
 ```
+#### Скриншоты логов запущенных вами контейнеров (из командной строки)
+![amazon2_logs](https://user-images.githubusercontent.com/76260506/125507906-85d40575-f202-402f-80ad-dfd25de3e0c5.png)
+![Ubuntu1__logs](https://user-images.githubusercontent.com/76260506/125507922-20a81b1d-82e9-4de1-89f8-1a92c780879a.png)
+
+#### Скриншоты веб-интерфейса Jenkins запущенных вами контейнеров (достаточно 1 скриншота на контейнер)
+
+![amazon4](https://user-images.githubusercontent.com/76260506/125508131-154c9df9-f700-4aa9-b69a-d0772b6490cd.png)
+![Ubuntu4](https://user-images.githubusercontent.com/76260506/125508151-c678e412-e164-4025-baed-7d6024f855d3.png)
+
+#### Ссылки на образы в вашем хранилище docker-hub
+
+[amazoncorreto](https://hub.docker.com/layers/147252747/aleksandrzol/netology/jenkins_ver1/images/sha256-da55a446b23ac89f1a0d61afeff0f71ff7841b437ad881f8074df4bce49819fe?context=repo) \
+[ubuntu:latest](https://hub.docker.com/layers/147350840/aleksandrzol/netology/jenkins_ver2/images/sha256-b780448191721a7d234345c58ee16c52a9aa7f3bc94b1e5d275a1c319222aea1?context=repo)
+
+
+
