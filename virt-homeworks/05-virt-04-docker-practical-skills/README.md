@@ -1,4 +1,6 @@
+____
 ### Задача 1 
+____
 ### Написанный вами Dockerfile
 #### 1-ый вариант решения
 ```bash
@@ -30,8 +32,9 @@ CMD ["Hey, netology”]
 [Ссылка на образ в docker-hub ver_2](https://hub.docker.com/layers/147010380/aleksandrzol/netology/ponasay_v2/images/sha256-ce22ca5e85c811bc87b8806d1f3548bdd513643bc3b138798ae33ca4a4adf3f6?context=repo)
 ### Скриншот вывода командной строки после запуска контейнера из вашего базового образа
 ![photo_2021-04-25_20-32-17](https://user-images.githubusercontent.com/76260506/125505894-7b671c6a-bd40-4c75-9695-f09f640c6d22.jpg "Скриншот вывода" )
-
+____
 ### Задача 2
+____
 #### Наполнения 2х Dockerfile из задания
 ##### amazoncorreto
 ```bash
@@ -77,6 +80,23 @@ EXPOSE 8080
 
 [amazoncorreto](https://hub.docker.com/layers/147252747/aleksandrzol/netology/jenkins_ver1/images/sha256-da55a446b23ac89f1a0d61afeff0f71ff7841b437ad881f8074df4bce49819fe?context=repo) \
 [ubuntu:latest](https://hub.docker.com/layers/147350840/aleksandrzol/netology/jenkins_ver2/images/sha256-b780448191721a7d234345c58ee16c52a9aa7f3bc94b1e5d275a1c319222aea1?context=repo)
-
-
+____
+### Задача 3
+____
+#### Наполнение Dockerfile с npm приложением
+```bash
+FROM node:latest
+ARG VCAP_APP_HOST=0.0.0.0
+ENV VCAP_APP_HOST="${VCAP_APP_HOST}"
+RUN git clone https://github.com/simplicitesoftware/nodejs-demo.git
+WORKDIR /nodejs-demo
+RUN npm install
+EXPOSE 3000
+ENTRYPOINT npm start && /bin/bash
+```
+#### Скриншот вызова утилиты curl с успешным ответом
+![fh_upF0aqGQ](https://user-images.githubusercontent.com/76260506/125579542-dafc444e-f486-41ab-8bd1-091ee85b7139.jpg)
+![GUbsKAq-XGQ](https://user-images.githubusercontent.com/76260506/125579555-1f6bdbe8-0881-44b4-8872-4a0e46f7a324.jpg)
+#### Скриншот вывода вызова команды списка docker сетей (docker network cli)
+![Screenshot_8](https://user-images.githubusercontent.com/76260506/125584465-b21531e7-5aca-4a74-91cf-204d0d621f87.png)
 
