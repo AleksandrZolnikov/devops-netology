@@ -145,9 +145,8 @@ filebeat:
 
 ```yaml
 ---
-PLAY RECAP ************************************************************************************************************************
 el-instance                : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-f-instance                 : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+f-instance                 : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 k-instance                 : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
