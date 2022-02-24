@@ -125,19 +125,19 @@ k-instance                 : ok=4    changed=0    unreachable=0    failed=0    s
 elasticsearch:
   hosts:
     el-instance:
-      ansible_host: 52.36.212.123
+      ansible_host: 34.231.171.181
       ansible_connection: ssh
       ansible_user: centos
 kibana:
   hosts:
     k-instance:
-      ansible_host: 35.160.95.171
+      ansible_host: 34.268.113.192
       ansible_connection: ssh
       ansible_user: centos
 filebeat:
   hosts:
-    k-instance:
-      ansible_host: 52.12.114.159
+    f-instance:
+      ansible_host: 34.304.129.1171
       ansible_connection: ssh
       ansible_user: centos
 ```
