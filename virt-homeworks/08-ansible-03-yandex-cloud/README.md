@@ -1,6 +1,6 @@
 # 08.03 Использование Yandex Cloud
 
-### 1. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает kibana.
+#### 1. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает kibana.
 ```yaml
 - name: Install Kibana
   hosts: kibana
@@ -37,13 +37,13 @@
       notify: Restart Kibana    # Выполнить хенлдлер с названием Restart Kibana
       tags: kibana		# Все таски  помечены тегом kibana
 ```
-### 2. При создании tasks рекомендую использовать модули: get_url, template, yum, apt.
+#### 2. При создании tasks рекомендую использовать модули: get_url, template, yum, apt.
 Выполнено
 
-### 3. Tasks должны: скачать нужной версии дистрибутив, выполнить распаковку в выбранную директорию, сгенерировать конфигурацию с параметрами.
+#### 3. Tasks должны: скачать нужной версии дистрибутив, выполнить распаковку в выбранную директорию, сгенерировать конфигурацию с параметрами.
 Выполнено
 
-### 4.Приготовьте свой собственный inventory файл prod.yml.
+#### 4.Приготовьте свой собственный inventory файл prod.yml.
 
 ```yaml
 $ cat inventory/prod/hosts.yml
@@ -62,13 +62,13 @@ kibana:
       ansible_connection: ssh
       ansible_user: centos
 ```   
-5. Запустите `ansible-lint site.yml` и исправьте ошибки, если они есть.
+#### 5. Запустите `ansible-lint site.yml` и исправьте ошибки, если они есть.
 ```yaml
 $ ansible-lint site.yml
 WARNING  Overriding detected file kind 'yaml' with 'playbook' for given positional argument: site.yml
 ```
 
-6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
+#### 6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
 
 ```yaml
 $ ansible-playbook -i inventory/prod/hosts.yml site.yml --check
@@ -88,7 +88,7 @@ PLAY RECAP *********************************************************************
 el-instance                : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0
 ```
 
-7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
+#### 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
 
 ```yaml
 $ ansible-playbook site.yml -i inventory/prod/hosts.yml --diff
@@ -107,7 +107,7 @@ el-instance                : ok=4    changed=0    unreachable=0    failed=0    s
 k-instance                 : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
+#### 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 
 ```yaml
 $ ansible-playbook site.yml -i inventory/prod/hosts.yml --diff
@@ -118,9 +118,10 @@ el-instance                : ok=4    changed=0    unreachable=0    failed=0    s
 k-instance                 : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-9.4 `inventory/prod/hosts.yml`
+#### 9. Проделайте шаги с 1 до 8 для создания ещё одного play, который устанавливает и настраивает filebeat.
+
 ```yaml
----
+$ cat inventory/prod/hosts.yml
 
 elasticsearch:
   hosts:
@@ -141,16 +142,10 @@ filebeat:
       ansible_connection: ssh
       ansible_user: centos
 ```
-9.5 Проделайте шаги с 1 до 8 для создания ещё одного play, который устанавливает и настраивает filebeat.
 
-```yaml
----
-el-instance                : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-f-instance                 : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-k-instance                 : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-```
+#### 10. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
+Подготовил - описание плейбука смотрите в 1 ом пункте - далее все модули по описанию повторяются.
 
-10. Подготовил - описание плейбука смотрите в 1 ом пункте - далее все модули по описанию повторяются.
-
-11. Приложу ссылку в ДЗ.
+#### 11. Готовый playbook выложите в свой репозиторий, в ответ предоставьте ссылку на него.
+Приложил ссылку в ДЗ.
 
