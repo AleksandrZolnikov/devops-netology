@@ -16,7 +16,7 @@
       get_url: 
         url: "https://artifacts.elastic.co/downloads/kibana/kibana-{{ elk_stack_version }}--x86_64.rpm" # Скачиваем артефакты
         dest: "/tmp/kibana-{{ elk_stack_version }}--x86_64.rpm" # Указываем в какую папку копируем на удаленном сервере
-	mode: 0755			 # Задаем права на файл
+        mode: 0755			 # Задаем права на файл
       register: download_kibana		 # Записываем результат выполнение таски
       until: download_kibana is succeeded   # Повторять таск пока команда не выполнется успешно
       tags: kibana		# Все таски  помечены тегом kibana
@@ -33,7 +33,7 @@
       template:			# Заменяем конфигурационный файл
         src: kibana.yml.j2	# Копируем с локальной машины
         dest: /etc/kibana/kibana.yml # Копируем на удаленный сервер
-	mode: 0644		# Задаем права на файл
+        mode: 0644		# Задаем права на файл
       notify: Restart Kibana    # Выполнить хенлдлер с названием Restart Kibana
       tags: kibana		# Все таски  помечены тегом kibana
 ```
