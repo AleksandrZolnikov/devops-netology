@@ -60,7 +60,7 @@
    ```
 13. #### Выложите playbook в репозиторий.
    https://github.com/AleksandrZolnikov/devops-netology/tree/main/virt-homeworks/08-ansible-04-role
-14. #### В ответ приведите ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
+14. #### В ответ приведите ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook. \
    [kibana-role](https://github.com/AleksandrZolnikov/kibana-role)  
-   [filebeat-role](https://github.com/AleksandrZolnikov/filebeat-role) 
+   [filebeat-role](https://github.com/AleksandrZolnikov/filebeat-role)  \
    [playbook](https://github.com/AleksandrZolnikov/devops-netology/tree/main/virt-homeworks/08-ansible-04-role) 
