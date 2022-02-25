@@ -1,0 +1,13 @@
+---
+  - src: git@github.com:netology-code/mnt-homeworks-ansible.git
+    scm: git
+    version: "2.1.4"
+    name: elastic
+  - src: git@github.com:AleksandrZolnikov/kibana-role.git
+    scm: git
+    version: "2.1.4"
+    name: kibana_role
+  - src: git@github.com:AleksandrZolnikov/filebeat-role.git
+    scm: git
+    version: "2.1.4"
+    name: filebeat_role  
