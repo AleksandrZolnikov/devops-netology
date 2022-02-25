@@ -43,7 +43,7 @@
     version: "2.1.4"
     name: filebeat_role  
    ```
-12. #### Переработайте playbook на использование roles.
+ #### 12. Переработайте playbook на использование roles.
    ```yaml
    - name: Install elasticsearch-role
      hosts: elasticsearch
@@ -58,9 +58,9 @@
      roles:
        - filebeat-role
    ```
-13. #### Выложите playbook в репозиторий.
-   https://github.com/AleksandrZolnikov/devops-netology/tree/main/virt-homeworks/08-ansible-04-role \
-14. #### В ответ приведите ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook. \
+ #### 13. Выложите playbook в репозиторий.
+   https://github.com/AleksandrZolnikov/devops-netology/tree/main/virt-homeworks/08-ansible-04-role 
+ #### 14. В ответ приведите ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook. \
    [kibana-role](https://github.com/AleksandrZolnikov/kibana-role)  
    [filebeat-role](https://github.com/AleksandrZolnikov/filebeat-role)  \
    [playbook](https://github.com/AleksandrZolnikov/devops-netology/tree/main/virt-homeworks/08-ansible-04-role) 
