@@ -296,6 +296,6 @@ INFO     Pruning extra files from scenario ephemeral directory
 ```
 #### 6. Добавьте новый тег на коммит с рабочим сценарием в соответствии с семантическим версионированием.
 
-[https://github.com/AleksandrZolnikov/filebeat-role/tree/2.2.0](https://github.com/AleksandrZolnikov/filebeat-role/tree/2.2.0)
+[https://github.com/AleksandrZolnikov/filebeat-role/tree/2.2.0](https://github.com/AleksandrZolnikov/filebeat-role/tree/2.2.0) \
 [https://github.com/AleksandrZolnikov/kibana-role/tree/2.2.0](https://github.com/AleksandrZolnikov/kibana-role/tree/2.2.0)
 
