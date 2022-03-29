@@ -14,7 +14,7 @@
 7. Исправляем ошибки, которые он выявил(включая warnings)
 8. Запускаем анализатор повторно - проверяем, что QG пройдены успешно
 9. Делаем скриншот успешного прохождения анализа, прикладываем к решению ДЗ
-
+![Screenshot_1](https://user-images.githubusercontent.com/76260506/160691926-8e318c9e-ffca-4767-bec8-3a03991d3fd4.png)
 ### Знакомство с Nexus
 
 #### Основная часть
@@ -28,8 +28,6 @@
 2. В него же загружаем такой же артефакт, но с version: 8_102
 3. Проверяем, что все файлы загрузились успешно
 4. В ответе присылаем файл `maven-metadata.xml` для этого артефекта
-![Screenshot_1](https://user-images.githubusercontent.com/76260506/160691926-8e318c9e-ffca-4767-bec8-3a03991d3fd4.png)
-
 
 ```yaml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -43,7 +41,7 @@
       <version>8_102</version>
       <version>8_282</version>
     </versions>
-    <lastUpdated>20211321534867</lastUpdated>
+    <lastUpdated>20220322204137</lastUpdated>
   </versioning>
 </metadata>
 ```
