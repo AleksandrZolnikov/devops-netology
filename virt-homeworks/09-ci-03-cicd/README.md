@@ -28,6 +28,7 @@
 2. В него же загружаем такой же артефакт, но с version: 8_102
 3. Проверяем, что все файлы загрузились успешно
 4. В ответе присылаем файл `maven-metadata.xml` для этого артефекта
+![Screenshot_1](https://user-images.githubusercontent.com/76260506/160691926-8e318c9e-ffca-4767-bec8-3a03991d3fd4.png)
 
 
 ```yaml
