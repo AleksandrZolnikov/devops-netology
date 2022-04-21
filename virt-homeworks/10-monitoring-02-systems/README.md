@@ -106,7 +106,7 @@ $ curl http://localhost:9092/kapacitor/v1/ping -v
 < 
 * Connection #0 to host localhost left intact
 ```
-
+![1](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-02-systems/1.png)
 
 ---
 
@@ -126,6 +126,7 @@ $ curl http://localhost:9092/kapacitor/v1/ping -v
 
 ### 4. Решение
 
+![1](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-02-systems/2.png)
 
 ---
 
@@ -168,6 +169,6 @@ $ curl http://localhost:9092/kapacitor/v1/ping -v
 ```bash
 sudo chmod 666 /var/run/docker.sock
 ```
-
+![1](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-02-systems/3.png)
 ---
 
