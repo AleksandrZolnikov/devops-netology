@@ -82,10 +82,12 @@ $ curl http://localhost:8086/ping -v
 < Date: Thu, 21 Apr 2022 11:37:34 GMT
 < 
 * Connection #0 to host localhost left intact
-
+```
+```bash
 $ curl http://localhost:8888
 <!DOCTYPE html><html><head><meta http-equiv="Content-type" content="text/html; charset=utf-8"><title>Chronograf</title><link rel="icon shortcut" href="/favicon.fa749080.ico"><link rel="stylesheet" href="/src.3dbae016.css"></head><body> <div id="react-root" data-basepath=""></div> <script src="/src.fab22342.js"></script> </body></html>
-
+```
+```bash
 $ curl http://localhost:9092/kapacitor/v1/ping -v
 *   Trying 127.0.0.1:9092...
 * TCP_NODELAY set
