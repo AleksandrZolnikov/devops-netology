@@ -33,6 +33,7 @@
 
 #### Решение
 
+![2](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-03-grafana/Screenshot_2.png)
 
 
 ### Задание 2
@@ -78,7 +79,7 @@ node_memory_MemFree_bytes{instance="nodeexporter:9100", job="nodeexporter"}
 node_filesystem_avail_bytes{fstype!~"tmpfs|fuse.lxcfs|squashfs"}
 ```
 
-
+![1](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-03-grafana/Screenshot_1.png)
 
 ### Задание 3
 Создайте для каждой Dashboard подходящее правило alert (можно обратиться к первой лекции в блоке "Мониторинг").
@@ -90,7 +91,7 @@ node_filesystem_avail_bytes{fstype!~"tmpfs|fuse.lxcfs|squashfs"}
 #### Решение
 
 
-
+![1](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-03-grafana/Screenshot_3.png)
 
 ### Задание 4
 Сохраните ваш Dashboard.
@@ -105,5 +106,5 @@ node_filesystem_avail_bytes{fstype!~"tmpfs|fuse.lxcfs|squashfs"}
 
 #### Решение
 
-
+https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-03-grafana/dashboard.json
 
