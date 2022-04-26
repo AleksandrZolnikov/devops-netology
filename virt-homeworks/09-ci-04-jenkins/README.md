@@ -18,6 +18,6 @@
 7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`. Цель: получить собранный стек ELK в Ya.Cloud.
 8. Отправить две ссылки на репозитории в ответе: [с ролью и Declarative Pipeline](https://github.com/AleksandrZolnikov/ansible-elasticsearch-role) и c плейбукой и [плейбукой и Scripted Pipeline](https://github.com/AleksandrZolnikov/ansible-efk-stack).
 
-###Решение:
-[Роль Declarative Pipeline](https://github.com/AleksandrZolnikov/ansible-elasticsearch-role)
+### Решение:
+[Роль Declarative Pipeline](https://github.com/AleksandrZolnikov/ansible-elasticsearch-role) \
 [Плейбук Scripted Pipeline](https://github.com/AleksandrZolnikov/ansible-efk-stack)
