@@ -19,5 +19,5 @@
 8. Отправить две ссылки на репозитории в ответе: [с ролью и Declarative Pipeline](https://github.com/AleksandrZolnikov/ansible-elasticsearch-role) и c плейбукой и [плейбукой и Scripted Pipeline](https://github.com/AleksandrZolnikov/ansible-efk-stack).
 
 ### Решение:
-[Роль Declarative Pipeline](https://github.com/AleksandrZolnikov/ansible-elasticsearch-role) \
+[Роль и Declarative Pipeline](https://github.com/AleksandrZolnikov/ansible-elasticsearch-role) \
 [Плейбук Scripted Pipeline](https://github.com/AleksandrZolnikov/ansible-efk-stack)
