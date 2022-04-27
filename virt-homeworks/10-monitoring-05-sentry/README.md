@@ -17,7 +17,7 @@ Free cloud account имеет следующие ограничения:
 
 Для выполнения задания - пришлите скриншот меню Projects.
 
-![projects](Screenshot_1) 
+![1](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-05-sentry/Screenshot_1.png) 
 
 ## Задание 2
 
@@ -29,7 +29,7 @@ Free cloud account имеет следующие ограничения:
 
 Для выполнения задание предоставьте скриншот `Stack trace` из этого события и список событий проекта, 
 после нажатия `Resolved`.  
-![events](Screenshot_2)  
+![2](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-05-sentry/Screenshot_2.png)  
 
 ## Задание 3
 
@@ -48,7 +48,7 @@ Free cloud account имеет следующие ограничения:
 
 Для выполнения задания - пришлите скриншот тела сообщения из оповещения на почте.
 
-![alert](Screenshot_3)  
+![3](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/10-monitoring-05-sentry/Screenshot_3.png)  
 
 Дополнительно поэкспериментируйте с правилами алёртинга. 
 Выбирайте разные условия отправки и создавайте sample events. 
