@@ -20,4 +20,4 @@
 
 ### Решение:
 [Роль и Declarative Pipeline](https://github.com/AleksandrZolnikov/ansible-elasticsearch-role) \
-[Плейбук Scripted Pipeline](https://github.com/AleksandrZolnikov/ansible-efk-stack)
+[Плейбук и Scripted Pipeline](https://github.com/AleksandrZolnikov/ansible-efk-stack)
