@@ -123,7 +123,7 @@ root@minicube:~# kubectl logs -f app-deploy-8c989567-f2wsg -n app-namespace
  ```
  kubectl scale deploy app-deploy --replicas=5
  ```
- Процесс:  
+
  ```
 root@minicube:~# kubectl scale deploy app-deploy --replicas=5
 deployment.apps/app-deploy scaled
