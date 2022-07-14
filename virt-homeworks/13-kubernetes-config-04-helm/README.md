@@ -49,7 +49,7 @@ kubernetes-dashboard   Active   38m     kubernetes.io/metadata.name=kubernetes-d
 
 ## Задание 1: подготовить helm чарт для приложения
 
-### [Helm chart]()
+### [Helm chart](https://github.com/AleksandrZolnikov/devops-netology/tree/main/virt-homeworks/13-kubernetes-config-04-helm/Chart)
 
 ## Задание 2: запустить 2 версии в разных неймспейсах
 
