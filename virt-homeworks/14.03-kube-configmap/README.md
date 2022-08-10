@@ -184,8 +184,8 @@ aleksandr@WS01:~/14.03-kube-configmap$ kubectl exec -ti test-pod -c fedora -- ls
 total 0
 drwxrwxrwx. 3 root root 99 Aug  1 19:13 .
 drwxr-xr-x. 1 root root 25 Aug  1 19:13 ..
-drwxr-xr-x. 2 root root 45 Aug  1 19:13 ..2022_04_01_19_13_43.3727146560
-lrwxrwxrwx. 1 root root 29 Aug  1 19:13 ..data -> ..2022_04_01_19_13_43.3727146560
+drwxr-xr-x. 2 root root 45 Aug  1 19:13 ..2022_08_10_19_02_51.3727146560
+lrwxrwxrwx. 1 root root 29 Aug  1 19:13 ..data -> ..2022_08_10_19_02_51.3727146560
 lrwxrwxrwx. 1 root root 10 Aug  1 19:13 task1 -> ..data/task1
 lrwxrwxrwx. 1 root root 10 Aug  1 19:13 task2 -> ..data/task2
 lrwxrwxrwx. 1 root root 10 Aug  1 19:13 task3 -> ..data/task3
