@@ -178,7 +178,7 @@ aleksandr@WS01:~/14.03-kube-configmap$ kubectl exec -ti test-pod -c fedora -- en
 TASK_2=test2
 ```
 
-Проверяем примонтированный диск:  
+Проверяем примоунченый CM:  
 ```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl exec -ti test-pod -c fedora -- ls -al /etc/config
 total 0
