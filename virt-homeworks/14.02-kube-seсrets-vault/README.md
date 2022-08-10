@@ -107,33 +107,33 @@ True
 
 ##  Задача 2 (*): Работа с секретами внутри модуля
 
-Сделал деплоймент:  
-```
+Создаем deployment:  
+```bash
 aleksandr@WS01:~/seсrets-vault$ kubectl create deployment hw142 --image=fedora -- sleep 100000
 deployment.apps/hw142 created
 
 ```
-Сделал секрет:  
-```
+Создаем секрет:  
+```bash
 aleksandr@WS01:~/seсrets-vault$ kubectl create secret generic mytoken --from-literal=vault_token=aiphohTaa0eeHei
 secret/mytoken created
 
 ```
 
-Присоединил секрет к поду через переменную окружения:  
-```
+Присоединяем секрет к поду:  
+```bash
 aleksandr@WS01:~/seсrets-vault$ kubectl set env --from=secret/mytoken deployment/hw142
 deployment.apps/hw142 env updated
 
 ```
-Добавил в переменные окружения адрес vault:  
-```
+Добавляем в переменные окружения адрес vault:  
+```bash
 aleksandr@WS01:~/seсrets-vault$ kubectl set env deployment/hw142 VAULT_ADDR=http://172.17.0.3:8200
 deployment.apps/hw142 env updated
 ```
 
-Зашел на под:  
-```
+Проваливаемся в под:  
+```bash
 aleksandr@WS01:~/seсrets-vault$ kubectl get po
 NAME                     READY   STATUS      RESTARTS   AGE
 14.2-netology-vault      1/1     Running     0          39m
@@ -143,13 +143,13 @@ aleksandr@WS01:~/seсrets-vault$ kubectl exec -ti hw142-54f6cbdc6c-j2zjg -c fedo
 sh-5.1# 
 
 ```
-Как в пред. задании устанавливаем зависимости:  
-```
+Устанавливаем зависимости:  
+```bash
 dnf -y install pip
 pip install hvac
 ```
-Выполнил немного измененный код из первого задания в python:  
-```
+
+```bash
 sh-5.1# /usr/bin/python3
 Python 3.10.2 (main, Jan 17 2022, 00:00:00) [GCC 11.2.1 20211203 (Red Hat 11.2.1-7)] on linux
 Type "help", "copyright", "credits" or "license" for more information.
