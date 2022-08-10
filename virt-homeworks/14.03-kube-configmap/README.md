@@ -1,7 +1,7 @@
 ### Задача 1: Работа с картами конфигураций через утилиту kubectl в установленном minikube. 
 
 Как создать карту конфигураций?  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl create configmap nginx-config --from-file=nginx.conf
 configmap/nginx-config created
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl create configmap domain --from-literal=name=netology.ru
@@ -9,7 +9,7 @@ configmap/domain created
 ```
 
 Как просмотреть список карт конфигураций?  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl get configmaps
 NAME               DATA   AGE
 domain             1      10s
@@ -18,7 +18,7 @@ nginx-config       1      78s
 ```
 
 Как просмотреть карту конфигурации?  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl get configmap nginx-config
 NAME           DATA   AGE
 nginx-config   1      3m01s
@@ -42,7 +42,7 @@ Events:  <none>
 
 Как получить информацию в формате YAML и/или JSON?  
 Часть вывода обрезал  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl get configmap nginx-config -o yaml
 apiVersion: v1
 data:
@@ -75,7 +75,7 @@ aleksandr@WS01:~/14.03-kube-configmap$ kubectl get configmap domain -o json
 
 Как выгрузить карту конфигурации и сохранить его в файл?  
 Часть вывода обрезал  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl get configmaps -o json > configmaps.json
 aleksandr@WS01:~/14.03-kube-configmap$ cat configmaps.json 
 {
@@ -100,13 +100,13 @@ aleksandr@WS01:~/14.03-kube-configmap$ kubectl get configmap nginx-config -o yam
 ```
 
 Как удалить карту конфигурации?  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl delete configmap nginx-config
 configmap "nginx-config" deleted
 ```
 
 Как загрузить карту конфигурации из файла?  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl apply -f nginx-config.yml
 configmap/nginx-config created
 ```
@@ -116,7 +116,7 @@ configmap/nginx-config created
 Выбрать любимый образ контейнера, подключить карты конфигураций и проверить их  доступность как в виде переменных окружения, так и в виде примонтированного тома  
 
 Сделал yml для развертывания с образом федоры:  
-```
+```yaml
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -159,7 +159,7 @@ spec:
 ```
 
 Процесс:  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl get po
 No resources found in default namespace.
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl apply -f pods.yml
@@ -171,7 +171,7 @@ test-pod   1/1     Running   0          7s
 ```
 
 Проверяем переменные:  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl exec -ti test-pod -c fedora -- env | grep TASK_1
 TASK_1=test1
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl exec -ti test-pod -c fedora -- env | grep TASK_2
@@ -179,7 +179,7 @@ TASK_2=test2
 ```
 
 Проверяем примонтированный диск:  
-```
+```bash
 aleksandr@WS01:~/14.03-kube-configmap$ kubectl exec -ti test-pod -c fedora -- ls -al /etc/config
 total 0
 drwxrwxrwx. 3 root root 99 Aug  1 19:13 .
