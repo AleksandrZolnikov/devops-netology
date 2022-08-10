@@ -175,4 +175,4 @@ True
 >>> 
 
 ```
-![screen](https://github.com/AleksandrZolnikov/devops-netology/tree/main/virt-homeworks/14.02-kube-seсrets-vault/Screenshot_1.png)
+![screen](https://github.com/AleksandrZolnikov/devops-netology/blob/main/virt-homeworks/14.02-kube-seсrets-vault/Screenshot_1.png)
